@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+$padding-lr: 24px;
+$width-lr: 136px;
+
+nav.navbar {
+    height: 80px;
+    text-align: center;
+
+    .navbar-left {
+        float: left;
+        width: $width-lr;
+        text-align: left;
+        padding-left: $padding-lr;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+    }
+
+    .brand {
+        h1 {
+            font-size: 1.8em;
+            margin: 0px;
+        }
+        a {
+            text-decoration: none;
+            color: $cl-darkest-tone;
+        }
+        // padding-top: 20px;
+    }
+
+    .nav-items-container {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    ul.nav-items {
+        display: inline;
+        list-style: none;
+        padding: 0px;
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                margin: 0px 24px;
+                padding: 8px;
+                color: $cl-dark-tone;
+                font-size: 1.2em;
+                &.active {
+                    border-bottom: 3px solid $cl-lighter-tone;
+                }
+            }
+        }
+    }
+
+    .navbar-right {
+        float: right;
+        width: $width-lr;
+        text-align: right;
+        padding-right: $padding-lr;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        .btn {
+            height: 24px; // desired height (40px) - top/bottom padding (8px each)
+            font-size: 1.2em;
+        }
+    }
+}

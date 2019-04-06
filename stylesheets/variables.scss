@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Bold;
+    src: url(/assets/fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+    font-family: Book;
+    src: url(/assets/fonts/CircularStd-Book.otf);
+}
+
+$cl-lightest-tone: #ffffff;
+$cl-lighter-tone:#e4e4e8;
+$cl-light-tone: #8c8d9c;
+$cl-dark-tone: #57586e;
+$cl-darker-tone: #101131;
+$cl-darkest-tone: #000000;
+$cl-primary-color: #2ec4b6;
+$cl-secondary-color: #c42e3d;
+
+.dark-text {
+    color: $cl-dark-tone;
+}
+
+$font-level-b: Book;
+$font-level-a: Bold;
+
+h1 {
+    font-family: $font-level-a, sans-serif;
+}
+
+$bkpt-sm: 576px;
+$bkpt-md: 768px;
+$bkpt-lg: 998px;
+$bkpt-xl: 1200px;
+
+.btn {
+    padding: 8px 24px 8px 24px;
+    border-radius: 20px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: $cl-primary-color;
+    color: white;
+}
